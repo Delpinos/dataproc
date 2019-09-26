@@ -1,6 +1,10 @@
 dataproc.egg-info/
 build/
 .idea
+*.pyc
+*~
+*.swp
+*.log
 run.py
 test.py
 db/*.bson
