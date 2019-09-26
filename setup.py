@@ -12,9 +12,10 @@ setup(
     name='dataproc',
     version='0.0.1',
     description='Data Processing and Transformation',
-    author='Alef Bruno Delpino de Oliveira',
+    author='Alef Bruno Delpino',
     author_email='alefdelpino@gmail.com',
-    url='https://github.com/Delpinos/dataproc.git',
+    url='https://github.com/Delpinos/dataproc',
+    license='GPL License',
     classifiers=[
         'Programming Language :: Python :: 3.6',
     ],
