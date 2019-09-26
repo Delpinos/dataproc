@@ -1,0 +1,21 @@
+version: "3.3"
+
+services:
+
+  dataproc:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: delpinos/dataproc
+    container_name: dataproc
+    restart: always
+    privileged: true
+    tty: true
+    volumes:
+      - .:/dataproc
+    labels:
+      - "com.docker.compose.project=dataproc"
+      - "org.label-schema.schema-version=1.0"
+      - "org.label-schema.name=dataproc"
+      - "org.label-schema.description=Data Processing and Transformation"
+      - "org.label-schema.version=0.0.1"
