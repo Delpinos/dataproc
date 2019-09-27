@@ -43,7 +43,7 @@ def parse_requirements(requirements):
 # Package metadata.
 metadata = dict(
     name='dataproc',
-    version='0.0.3',
+    version='0.0.1-1',
     description='Data Processing and Transformation',
     author='Alef Bruno Delpino',
     author_email='alefdelpino@gmail.com',
@@ -56,7 +56,7 @@ metadata = dict(
     ],
     keywords='dataproc proc data etl tramsform process pipeline executor',
     packages=find_packages(),
-    install_requires=parse_requirements('/'.join([here, 'requirements.txt'])),
+    install_requires=['cryptography', 'pymongo']
 )
 
 # Get the long description from the readme file.
