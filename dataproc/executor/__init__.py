@@ -186,7 +186,7 @@ class Executor(list):
             for fnc in args:
                 if callable(fnc):
                     try:
-                        fnc(row)
+                        row = fnc(row)
                     except Exception:
                         continue
             return row

@@ -1,5 +1,6 @@
 dataproc.egg-info/
 build/
+dist/
 .idea
 *.pyc
 *~
