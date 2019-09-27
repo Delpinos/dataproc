@@ -10,7 +10,7 @@ def parse_requirements(requirements):
 
 setup(
     name='dataproc',
-    version='0.0.1',
+    version='0.0.2',
     description='Data Processing and Transformation',
     author='Alef Bruno Delpino',
     author_email='alefdelpino@gmail.com',
