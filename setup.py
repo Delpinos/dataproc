@@ -43,7 +43,7 @@ def parse_requirements(requirements):
 # Package metadata.
 metadata = dict(
     name='dataproc',
-    version='0.0.4',
+    version='0.0.1.1',
     description='Data Processing and Transformation',
     author='Alef Bruno Delpino',
     author_email='alefdelpino@gmail.com',
