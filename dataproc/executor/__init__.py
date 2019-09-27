@@ -172,10 +172,12 @@ class Executor(list):
         def _map(row):
             if callable(fnc):
                 try:
-                    row[alias] = fnc(row)
+                    row[alias] = fnc(Row(row))
                 except Exception:
                     row[alias] = row.get(alias, None)
-            return row
+            else:
+                row[alias] = fnc
+            return Row(row)
 
         self.__DATA__ = list(map(_map, self.__DATA__))
         self.__SELECT__ = []
@@ -186,10 +188,10 @@ class Executor(list):
             for fnc in args:
                 if callable(fnc):
                     try:
-                        row = fnc(row)
+                        row = fnc(Row(row))
                     except Exception:
                         continue
-            return row
+            return Row(row)
 
         self.__DATA__ = list(map(_map, self.__DATA__))
         self.__SELECT__ = []
