@@ -2,7 +2,7 @@ from dataproc.executor import Executor
 from dataproc.model import RowCreator
 
 
-class Pipeline(list):
+class Pipeline():
     __PIPELINE__ = []
     __REDUCE__ = []
 

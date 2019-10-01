@@ -19,7 +19,7 @@ class Row(dict, object):
                 for key in keys:
                     v = v.get(key, None) if isinstance(v, dict) else None
                 item[alias if alias is not None else key] = v
-            except Exception:
+            except Exception as e:
                 pass
         return Row(item)
 

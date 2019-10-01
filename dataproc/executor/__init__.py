@@ -8,7 +8,7 @@ from bson.json_util import loads
 from dataproc.model import Row, RowCreator
 
 
-class Join(list):
+class Join():
     items = []
 
     def __init__(self, items=[]):
@@ -68,7 +68,7 @@ class Join(list):
         return self.items
 
 
-class Executor(list):
+class Executor():
     __SKIP_ = 0
     __PAGE__ = 1
     __DATA__ = []
